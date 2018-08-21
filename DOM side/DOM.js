@@ -47,3 +47,16 @@ nameButton.addEventListener("click",function(){
     nameBox.appendChild(span)
     span.appendChild(name)
 })
+
+let myFriends = ["Christopher", "Warryn", "Woody", "Juniper", "Anthony", "Joe", "Random", "Eric", "Sara", "Tess", "Blair (A Cat)", "Yuki (Another Cat)"]
+let friendButton = document.getElementById('listIt')
+let friendList = document.getElementById('list0Friends')
+friendButton.addEventListener("click",function(){
+    for (let i = 0; i < myFriends.length; i++) {
+        const friend = myFriends[i];
+        let friendName = document.createTextNode(friend)
+        let li = document.createElement("li");
+        friendList.appendChild(li)
+        li.appendChild(friendName)
+    }
+})
