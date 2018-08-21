@@ -29,3 +29,12 @@ hover.addEventListener("mouseenter", function(){
         hover.style.backgroundColor = "initial";
     })
 })
+
+let p = document.getElementById('rand')
+p.addEventListener("click", function(){
+//    p.style.color = "red";
+    let colorR = Math.floor((Math.random() * 256));
+    let colorG = Math.floor((Math.random() * 256));
+    let colorB = Math.floor((Math.random() * 256));
+    p.style.color = "rgb(" + colorR + "," + colorG + "," + colorB + ")";
+})

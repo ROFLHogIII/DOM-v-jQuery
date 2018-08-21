@@ -4,7 +4,7 @@ $(button).appendTo(body);
 
 $(button).click(function () {
     window.alert("Well, arn't you lookin' cute today. ;)")
-})
+});
 
 $("#submit").click(function (e) {
     e.preventDefault()
@@ -19,5 +19,13 @@ $("#hover").mouseenter(function(){
     $("#hover").css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")")
     $("#hover").mouseleave(function(){
         $("#hover").css("background-color", "initial")
-    })
-})
+    });
+});
+
+$("#rand").click(function(){
+//$("#rand").css("color", "red");
+    let colorR = Math.floor((Math.random() * 256));
+    let colorG = Math.floor((Math.random() * 256));
+    let colorB = Math.floor((Math.random() * 256));
+    $("#rand").css("color", "rgb(" + colorR + "," + colorG + "," + colorB + ")") 
+});
