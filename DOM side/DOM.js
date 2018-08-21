@@ -38,3 +38,12 @@ p.addEventListener("click", function(){
     let colorB = Math.floor((Math.random() * 256));
     p.style.color = "rgb(" + colorR + "," + colorG + "," + colorB + ")";
 })
+
+let nameButton = document.getElementById('nameButton')
+let nameBox = document.getElementById('nameBox')
+nameButton.addEventListener("click",function(){
+    let span  = document.createElement("span");
+    let name = document.createTextNode("Richard Lee Garner ")
+    nameBox.appendChild(span)
+    span.appendChild(name)
+})

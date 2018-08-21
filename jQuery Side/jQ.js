@@ -12,20 +12,24 @@ $("#submit").click(function (e) {
     window.alert(wordz)
 });
 
-$("#hover").mouseenter(function(){
+$("#hover").mouseenter(function () {
     let colorR = Math.floor((Math.random() * 256));
     let colorG = Math.floor((Math.random() * 256));
     let colorB = Math.floor((Math.random() * 256));
     $("#hover").css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")")
-    $("#hover").mouseleave(function(){
+    $("#hover").mouseleave(function () {
         $("#hover").css("background-color", "initial")
     });
 });
 
-$("#rand").click(function(){
-//$("#rand").css("color", "red");
+$("#rand").click(function () {
+    //$("#rand").css("color", "red");
     let colorR = Math.floor((Math.random() * 256));
     let colorG = Math.floor((Math.random() * 256));
     let colorB = Math.floor((Math.random() * 256));
-    $("#rand").css("color", "rgb(" + colorR + "," + colorG + "," + colorB + ")") 
+    $("#rand").css("color", "rgb(" + colorR + "," + colorG + "," + colorB + ")")
+});
+
+$("#nameButton").click(function () {
+    $("<span>" + "Richard Lee Garner " + "</span>").appendTo("#nameBox")
 });
