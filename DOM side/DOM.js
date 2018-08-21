@@ -18,3 +18,14 @@ submit.addEventListener("click", function(e){
     window.alert(value)
 
 })
+
+let hover  = document.getElementById('hover')
+hover.addEventListener("mouseenter", function(){
+    let colorR = Math.floor((Math.random() * 256));
+    let colorG = Math.floor((Math.random() * 256));
+    let colorB = Math.floor((Math.random() * 256));
+    hover.style.backgroundColor = "rgb(" + colorR + "," + colorG + "," + colorB + ")";
+    hover.addEventListener("mouseleave",function(){
+        hover.style.backgroundColor = "initial";
+    })
+})
